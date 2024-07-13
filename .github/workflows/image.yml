@@ -85,19 +85,19 @@ jobs:
             base-image: "ubuntu:22.04"
             makeflags: "--jobs=3 --output-sync=target"
           # - build-type: 'cublas'
-            cuda-major-version: "11"
-            cuda-minor-version: "8"
-            platforms: 'linux/amd64'
-            tag-latest: 'auto'
-            tag-suffix: '-cublas-cuda11-ffmpeg'
-            ffmpeg: 'true'
-            image-type: 'extras'
-            runs-on: 'arc-runner-set'
-            base-image: "ubuntu:22.04"
-            aio: "-aio-gpu-nvidia-cuda-11"
-            latest-image: 'latest-gpu-nvidia-cuda-11'
-            latest-image-aio: 'latest-aio-gpu-nvidia-cuda-11'
-            makeflags: "--jobs=3 --output-sync=target"
+            # cuda-major-version: "11"
+            # cuda-minor-version: "8"
+            # platforms: 'linux/amd64'
+            # tag-latest: 'auto'
+            # tag-suffix: '-cublas-cuda11-ffmpeg'
+            # ffmpeg: 'true'
+            # image-type: 'extras'
+            # runs-on: 'arc-runner-set'
+            # base-image: "ubuntu:22.04"
+            # aio: "-aio-gpu-nvidia-cuda-11"
+            # latest-image: 'latest-gpu-nvidia-cuda-11'
+            # latest-image-aio: 'latest-aio-gpu-nvidia-cuda-11'
+            # makeflags: "--jobs=3 --output-sync=target"
           - build-type: 'cublas'
             cuda-major-version: "12"
             cuda-minor-version: "3"
