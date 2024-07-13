@@ -77,8 +77,8 @@ jobs:
       latest-image: ${{ matrix.latest-image }}
       latest-image-aio: ${{ matrix.latest-image-aio }}
     secrets:
-      dockerUsername: ${{ secrets.DOCKERHUB_USERNAME }}
-      dockerPassword: ${{ secrets.DOCKERHUB_PASSWORD }}
+      dockerUsername: ${{ secrets.DOCKER_USER }}
+      dockerPassword: ${{ secrets.DOCKER_TOKEN }}
       # quayUsername: ${{ secrets.LOCALAI_REGISTRY_USERNAME }}
       # quayPassword: ${{ secrets.LOCALAI_REGISTRY_PASSWORD }}
     strategy:
