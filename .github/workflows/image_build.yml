@@ -73,10 +73,7 @@ on:
         required: true
       dockerPassword:
         required: true
-      quayUsername:
-        required: true
-      quayPassword:
-        required: true
+
 jobs:
   reusable_image-build:
     runs-on: ${{ inputs.runs-on }}
