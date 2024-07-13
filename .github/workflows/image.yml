@@ -81,7 +81,7 @@ jobs:
             tag-suffix: '-cublas-cuda12'
             ffmpeg: ''
             image-type: 'extras'
-            runs-on: 'arc-runner-set'
+            runs-on: 'ubuntu-latest'
             base-image: "ubuntu:22.04"
             makeflags: "--jobs=3 --output-sync=target"
           # - build-type: 'cublas'
@@ -106,7 +106,7 @@ jobs:
             tag-suffix: '-cublas-cuda12-ffmpeg'
             ffmpeg: 'true'
             image-type: 'extras'
-            runs-on: 'arc-runner-set'
+            runs-on: 'ubuntu-latest'
             base-image: "ubuntu:22.04"
             aio: "-aio-gpu-nvidia-cuda-12"
             latest-image: 'latest-gpu-nvidia-cuda-12'
@@ -267,7 +267,7 @@ jobs:
             ffmpeg: 'true'
             image-type: 'core'
             base-image: "ubuntu:22.04"
-            runs-on: 'arc-runner-set'
+            runs-on: 'ubuntu-latest'
             aio: "-aio-cpu"
             latest-image: 'latest-cpu'
             latest-image-aio: 'latest-aio-cpu'
@@ -281,7 +281,7 @@ jobs:
             ffmpeg: ''
             image-type: 'core'
             base-image: "ubuntu:22.04"
-            runs-on: 'arc-runner-set'
+            runs-on: 'ubuntu-latest'
             makeflags: "--jobs=4 --output-sync=target"
           - build-type: 'cublas'
             cuda-major-version: "12"
@@ -292,7 +292,7 @@ jobs:
             ffmpeg: ''
             image-type: 'core'
             base-image: "ubuntu:22.04"
-            runs-on: 'arc-runner-set'
+            runs-on: 'ubuntu-latest'
             makeflags: "--jobs=4 --output-sync=target"
           - build-type: 'cublas'
             cuda-major-version: "11"
@@ -302,7 +302,7 @@ jobs:
             tag-suffix: '-cublas-cuda11-ffmpeg-core'
             ffmpeg: 'true'
             image-type: 'core'
-            runs-on: 'arc-runner-set'
+            runs-on: 'ubuntu-latest'
             base-image: "ubuntu:22.04"
             makeflags: "--jobs=4 --output-sync=target"
           - build-type: 'cublas'
@@ -313,7 +313,7 @@ jobs:
             tag-suffix: '-cublas-cuda12-ffmpeg-core'
             ffmpeg: 'true'
             image-type: 'core'
-            runs-on: 'arc-runner-set'
+            runs-on: 'ubuntu-latestt'
             base-image: "ubuntu:22.04"
             makeflags: "--jobs=4 --output-sync=target"
           - build-type: 'vulkan'
@@ -323,6 +323,6 @@ jobs:
             latest-image: 'latest-vulkan-ffmpeg-core'
             ffmpeg: 'true'
             image-type: 'core'
-            runs-on: 'arc-runner-set'
+            runs-on: 'ubuntu-latest'
             base-image: "ubuntu:22.04"
             makeflags: "--jobs=4 --output-sync=target"
